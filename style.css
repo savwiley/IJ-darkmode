@@ -1,0 +1,281 @@
+@-moz-document domain("insanejournal.com") {
+
+  /*
+  VERSION: v1.0.1
+  AUTHOR: KillTheCake
+  NOTES: Check for latest versions! https://github.com/savwiley/IJ-darkmode
+  */
+
+  :root {
+    --skin-darkBG: #333;
+    --skin-BG: #444;
+    --skin-darker: #111;
+    --skin-lighter: #666;
+    --skin-text: #ddd;
+    --skin-headerText: #f7f7f7;
+  }
+  
+  body:not([class*="lj"])::-webkit-scrollbar,
+  body:not([class*="lj"]) textarea::-webkit-scrollbar,
+  body:not([class*="lj"]) div::-webkit-scrollbar {
+    background: var(--skin-darkBG);
+    width: 12px;
+    height: 12px;
+  }
+  
+  body:not([class*="lj"])::-webkit-scrollbar-thumb,
+  body:not([class*="lj"]) textarea::-webkit-scrollbar-thumb,
+  body:not([class*="lj"]) div::-webkit-scrollbar-thumb {
+    background: var(--skin-lighter);
+  }
+  
+  body:not([class*="lj"])::-webkit-scrollbar-corner,
+  body:not([class*="lj"]) textarea::-webkit-scrollbar-corner,
+  body:not([class*="lj"]) div::-webkit-scrollbar-corner {
+    background: var(--skin-darkBG);
+  }
+  
+  #draftstatus {
+    background: var(--skin-BG);
+    color: var(--skin-text);
+  }
+  
+  #IJ-sitepage {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+  }
+  
+  #IJ-sitepage-body {
+    background: var(--skin-BG);
+    color: var(--skin-text);
+  }
+  
+  #IJ-sitepage-footer p {
+    margin: 0;
+    padding: 10px;
+  }
+  
+  .dropdown #IJ-sitepage-freqlinks {
+    background: var(--skin-darker);
+  }
+  
+  .dropdown #IJ-sitepage-nav {
+    background: var(--skin-darkBG);
+    border-color: var(--skin-darker) !important;
+  }
+  
+  .dropdown #IJ-sitepage-content {
+    border-color: var(--skin-darker);
+  }
+  
+  .dropdown #nav li,
+  .dropdown #nav a {
+    background: var(--skin-darkBG);
+    color: var(--skin-text);
+  }
+  
+  .dropdown #nav li ul {
+    border-color: var(--skin-darker);
+  }
+  
+  #tweak-pic {
+    display: none;
+  }
+  
+  #header-nonmenu,
+  .sidebar #IJ-sitepage-userpic,
+  .sidebar #IJ-sitepage-body,
+  .sidebar #IJ-sitepage-nav,
+  #IJ-sitepage .section_head,
+  #IJ-sitepage .field_name,
+  #IJ-sitepage #AddPortalMenuButton,
+  #IJ-sitepage .PortalMenuItem,
+  #mainstuff .entry {
+    background: var(--skin-darkBG);
+    border: none;
+  }
+  
+  #IJ-sitepage-userpic img {
+    border-radius: 50px;
+  }
+  
+  body:not([class*="lj"]) a, 
+  body:not([class*="lj"]) a:visited,
+  #journal-title a, 
+  #journal-title a:visited,
+  .sidebar #IJ-sitepage-nav a, 
+  .sidebar #IJ-sitepage-nav a:visited,
+  #IJ-sitepage-freqlinks a,
+  #IJ-sitepage-freqlinks a:visited,
+  #IJ-sitepage .PortalBoxContent a:link, 
+  #IJ-sitepage .PortalBoxContent a:visited,
+  #lj_userpicselect {
+    color: var(--skin-text);
+  }
+  
+  .sidebar #IJ-sitepage-nav a, 
+  .sidebar #IJ-sitepage-nav a:visited {
+    font-size: 12px;
+  }
+  
+  .dropdown #nav li:hover,
+  .dropdown #nav li li:hover a{
+    background: var(--skin-darker);
+    color: var(--skin-headerText);
+    cursor: pointer;
+  }
+  
+  #tweak-says a, 
+  #tweak-says a:visited {
+    color: var(--skin-text);
+  }
+  
+  a:hover {
+    text-decoration: underline !important;
+  }
+  
+  #IJ-sitepage-nav a:hover,
+  #IJ-sitepage-freqlinks a:hover{
+    text-decoration: none !important;
+  }
+  
+  .sidebar #IJ-sitepage-nav .notlink {
+    color: var(--skin-text);
+    background: var(--skin-darker);
+    display: block;
+    padding: 2px 0 2px 4px;
+  }
+  
+  .sidebar #IJ-sitepage-nav ul ul li:hover, 
+  .sidebar #IJ-sitepage-nav ul ul li.sfhover,
+  #IJ-sitepage-freqlinks a:hover {
+    background: var(--skin-lighter);
+  }
+  
+  #IJ-sitepage-freqlinks {
+    background: var(--skin-darker);
+    color: var(--skin-text);
+  }
+  
+  input,
+  select,
+  textarea,
+  input.text, 
+  textarea.text, 
+  select.select {
+    background: var(--skin-text);
+    border: none;
+    margin: 3px;
+    accent-color: var(--skin-darker);
+  }
+  
+  select,
+  input[type="submit"],
+  input[type="button"] {
+    cursor: pointer;
+  }
+  
+  input[type="file"] {
+    background: var(--skin-BG);
+  }
+  
+  .sidebar #IJ-sitepage-content {
+    background: var(--skin-BG);
+    color: var(--skin-text);
+  }
+  
+  #IJ-sitepage .section_head,
+  #IJ-sitepage .field_name,
+  table {
+    color: var(--skin-text);
+    font-size: 13px;
+  }
+  
+  table label {
+    color: var(--skin-text);
+  }
+  
+  #inbox thead {
+    background: var(--skin-darkBG);
+  }
+  
+  #IJ-sitepage #message_list td.headfrom {
+    font-size: 11px;
+  }
+  
+  .CategoryRow td {
+    background: var(--skin-darkBG);
+  }
+  
+  .Subscribe tr.Disabled {
+    background: var(--skin-BG);
+  }
+  
+  .Subscribe td p {
+    background: var(--skin-darkBG);
+  }
+  
+  .Disabled label {
+    color: var(--skin-lighter);
+  }
+  
+  table.IJ-AccentBox2,
+  .sidebar #IJ-sitepage-footer,
+  #IJ-sitepage #Tabs li.SelectedTab,
+  #IJ-sitepage #options,
+  #IJ-sitepage #submitbar {
+    background: var(--skin-darkBG);
+  }
+  
+  #IJ-sitepage #Tabs li {
+    background: var(--skin-lighter);
+  }
+  
+  #Tabs li a,
+  legend {
+    color: var(--skin-headerText);
+  }
+  
+  #IJ-sitepage #Tabs,
+  #IJ-sitepage #Tabs li,
+  #IJ-sitepage #CurrentTab {
+    border-color: var(--skin-darker);
+  }
+  
+  #IJ-sitepage .PortalBoxTitleBar,
+  #IJ-sitepage .PortalBoxTitleText,
+  .UpdateJournal table {
+    background: var(--skin-darkBG);
+    color: var(--skin-headerText);
+  }
+  
+  #IJ-sitepage .UpdateJournal {
+    background: var(--skin-lighter);
+    border: none;
+  }
+  
+  .UpdateJournal table {
+    font-size: 13px;
+  }
+  
+  #updateForm label {
+    color: var(--skin-text);
+  }
+  
+  #IJ-sitepage .Manage table a {
+    border-color: var(--skin-darkBG);
+  }
+  
+  #IJ-sitepage #uploadBox {
+    background: var(--skin-BG);
+  }
+  
+  .borderedtable td {
+    border: 1px solid var(--skin-darkBG);
+  }
+  
+  table.talk-comment td:nth-child(2),
+  table tr[bgcolor="#EBE8DA"] {
+    background: var(--skin-darkBG);
+  }
+}
